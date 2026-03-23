@@ -1,0 +1,29 @@
+{
+  "dataset": "hotpotqa",
+  "input_path": "/Users/SaraWang/Desktop/DS1012 LLM/Final Project/dataset/hotpotqa/hotpot_dev_distractor_demo.json",
+  "record_count": 20,
+  "global_passage_pool_size": 199,
+  "output_format": "json",
+  "noise_variants": [
+    {
+      "ratio": 0.1,
+      "path": "/Users/SaraWang/Desktop/DS1012 LLM/Final Project/generated_stress_tests/hotpotqa_demo/hotpotqa_noise_rho_0.10.json"
+    }
+  ],
+  "redundancy_variants": [
+    {
+      "ratio": 0.1,
+      "path": "/Users/SaraWang/Desktop/DS1012 LLM/Final Project/generated_stress_tests/hotpotqa_demo/hotpotqa_redundancy_rho_0.10.json"
+    }
+  ],
+  "position_variants": [
+    {
+      "mode": "shuffle_all",
+      "path": "/Users/SaraWang/Desktop/DS1012 LLM/Final Project/generated_stress_tests/hotpotqa_demo/hotpotqa_position_shuffle_all.json"
+    },
+    {
+      "mode": "support_back",
+      "path": "/Users/SaraWang/Desktop/DS1012 LLM/Final Project/generated_stress_tests/hotpotqa_demo/hotpotqa_position_support_back.json"
+    }
+  ]
+}
