@@ -1,0 +1,380 @@
+{
+  "summary": {
+    "controller": "seal_rag",
+    "model": "openai:gpt-4o-mini",
+    "retriever_k": 3,
+    "repair_loop": 1,
+    "n_total": 20,
+    "n_valid": 20,
+    "n_errors": 0,
+    "accuracy": 0.75,
+    "avg_precision": 1.0,
+    "avg_recall": 0.55,
+    "avg_f1": 0.7,
+    "timestamp": "20260324_194727"
+  },
+  "results": [
+    {
+      "id": "5a8b57f25542995d1e6f1371",
+      "question": "Were Scott Derrickson and Ed Wood of the same nationality?",
+      "ground_truth": "yes",
+      "predicted": "Yes, both American.",
+      "correct": true,
+      "reasoning": "The agent's answer correctly identifies both Scott Derrickson and Ed Wood as American, which matches the ground truth that confirms their nationality. Therefore, the answer is correct and directly addresses the question.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Scott Derrickson",
+        "Ed Wood"
+      ],
+      "retrieved_titles": [
+        "Scott Derrickson"
+      ]
+    },
+    {
+      "id": "5a8c7595554299585d9e36b6",
+      "question": "What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?",
+      "ground_truth": "Chief of Protocol",
+      "predicted": "Ambassador to Ghana.",
+      "correct": false,
+      "reasoning": "The agent's answer states that the woman who portrayed Corliss Archer in the film 'Kiss and Tell' held the position of Ambassador to Ghana, which is factually incorrect. The ground truth indicates that she held the position of Chief of Protocol. Since the agent's answer contradicts the ground truth, it is not correct.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Shirley Temple",
+        "Kiss and Tell (1945 film)"
+      ],
+      "retrieved_titles": [
+        "Kiss and Tell (1945 film)"
+      ]
+    },
+    {
+      "id": "5a85ea095542994775f606a8",
+      "question": "What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",
+      "ground_truth": "Animorphs",
+      "predicted": "Animorphs series",
+      "correct": true,
+      "reasoning": "The agent answer correctly identifies the series as 'Animorphs', which matches the ground truth. However, it does not mention the aspect of companion books narrating the stories of enslaved worlds and alien species, which is a significant part of the question. Despite this omission, the core identification of the series is accurate.",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "gold_titles": [
+        "Animorphs",
+        "The Hork-Bajir Chronicles"
+      ],
+      "retrieved_titles": [
+        "Animorphs",
+        "The Hork-Bajir Chronicles"
+      ]
+    },
+    {
+      "id": "5adbf0a255429947ff17385a",
+      "question": "Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood?",
+      "ground_truth": "no",
+      "predicted": "Different neighborhoods.",
+      "correct": false,
+      "reasoning": "The agent's answer states that the Laleli Mosque and Esma Sultan Mansion are in different neighborhoods, which contradicts the ground truth that indicates they are not. Therefore, the answer is incorrect.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Laleli Mosque",
+        "Esma Sultan Mansion"
+      ],
+      "retrieved_titles": [
+        "Esma Sultan Mansion"
+      ]
+    },
+    {
+      "id": "5a8e3ea95542995a26add48d",
+      "question": "The director of the romantic comedy \"Big Stone Gap\" is based in what New York city?",
+      "ground_truth": "Greenwich Village, New York City",
+      "predicted": "Greenwich Village, New York City",
+      "correct": true,
+      "reasoning": "The agent's answer matches the ground truth exactly, providing the correct location of the director of 'Big Stone Gap'. There are no factual errors or contradictions, and it directly addresses the question asked.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Adriana Trigiani",
+        "Big Stone Gap (film)"
+      ],
+      "retrieved_titles": [
+        "Big Stone Gap (film)"
+      ]
+    },
+    {
+      "id": "5abd94525542992ac4f382d2",
+      "question": "2014 S/S is the debut album of a South Korean boy group that was formed by who?",
+      "ground_truth": "YG Entertainment",
+      "predicted": "YG Entertainment",
+      "correct": true,
+      "reasoning": "The agent answer correctly identifies YG Entertainment as the entity that formed the South Korean boy group associated with the debut album '2014 S/S'. This matches the ground truth without any factual errors or omissions.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Winner (band)",
+        "2014 S/S"
+      ],
+      "retrieved_titles": [
+        "Winner (band)"
+      ]
+    },
+    {
+      "id": "5a85b2d95542997b5ce40028",
+      "question": "Who was known by his stage name Aladin and helped organizations improve their performance as a consultant?",
+      "ground_truth": "Eenasul Fateh",
+      "predicted": "Eenasul Fateh",
+      "correct": true,
+      "reasoning": "The agent answer matches the ground truth exactly, providing the correct name of the individual known by the stage name Aladin who also worked as a consultant. There are no factual errors or contradictions in the response.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Eenasul Fateh",
+        "Management consulting"
+      ],
+      "retrieved_titles": [
+        "Eenasul Fateh"
+      ]
+    },
+    {
+      "id": "5a87ab905542996e4f3088c1",
+      "question": "The arena where the Lewiston Maineiacs played their home games can seat how many people?",
+      "ground_truth": "3,677 seated",
+      "predicted": "3,677 seated.",
+      "correct": true,
+      "reasoning": "The agent's answer matches the ground truth exactly in terms of the seating capacity of the arena where the Lewiston Maineiacs played their home games. There are no factual errors or contradictions, and the answer directly addresses the question asked.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Lewiston Maineiacs",
+        "Androscoggin Bank Colis\u00e9e"
+      ],
+      "retrieved_titles": [
+        "Androscoggin Bank Colis\u00e9e"
+      ]
+    },
+    {
+      "id": "5a7bbb64554299042af8f7cc",
+      "question": "Who is older, Annie Morton or Terry Richardson?",
+      "ground_truth": "Terry Richardson",
+      "predicted": "Terry Richardson.",
+      "correct": true,
+      "reasoning": "The agent answer correctly identifies Terry Richardson as the older individual, which matches the ground truth. There are no factual errors, and the answer directly addresses the question asked.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Annie Morton",
+        "Terry Richardson"
+      ],
+      "retrieved_titles": [
+        "Annie Morton"
+      ]
+    },
+    {
+      "id": "5a8db19d5542994ba4e3dd00",
+      "question": "Are Local H and For Against both from the United States?",
+      "ground_truth": "yes",
+      "predicted": "Yes, both are.",
+      "correct": true,
+      "reasoning": "The agent's answer correctly confirms that both Local H and For Against are from the United States, matching the ground truth semantically. There are no factual errors, and the answer directly addresses the question asked.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Local H",
+        "For Against"
+      ],
+      "retrieved_titles": [
+        "Local H"
+      ]
+    },
+    {
+      "id": "5a7166395542994082a3e814",
+      "question": "What is the name of the fight song of the university whose main campus is in Lawrence, Kansas and whose branch campuses are in the Kansas City metropolitan area?",
+      "ground_truth": "Kansas Song",
+      "predicted": "Kansas Song",
+      "correct": true,
+      "reasoning": "The agent answer matches the ground truth exactly, both stating 'Kansas Song' as the fight song of the university in question. There are no factual errors or contradictions, and the answer directly addresses the question asked.",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "gold_titles": [
+        "Kansas Song",
+        "University of Kansas"
+      ],
+      "retrieved_titles": [
+        "Kansas Song",
+        "University of Kansas"
+      ]
+    },
+    {
+      "id": "5a877e5d5542993e715abf7d",
+      "question": "What screenwriter with credits for \"Evolution\" co-wrote a film starring Nicolas Cage and T\u00e9a Leoni?",
+      "ground_truth": "David Weissman",
+      "predicted": "David Weissman",
+      "correct": true,
+      "reasoning": "The agent answer correctly identifies David Weissman as the screenwriter who co-wrote a film starring Nicolas Cage and T\u00e9a Leoni, matching the ground truth without any factual errors. Therefore, the answer is correct.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "David Weissman",
+        "The Family Man"
+      ],
+      "retrieved_titles": [
+        "The Family Man"
+      ]
+    },
+    {
+      "id": "5ab3b0bf5542992ade7c6e39",
+      "question": "What year did Guns N Roses perform a promo for a movie starring Arnold Schwarzenegger as a former New York Police detective?",
+      "ground_truth": "1999",
+      "predicted": "1999",
+      "correct": true,
+      "reasoning": "The agent's answer of 1999 matches the ground truth exactly, indicating that it is correct. There are no factual errors or contradictions in the response.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Oh My God (Guns N' Roses song)",
+        "End of Days (film)"
+      ],
+      "retrieved_titles": [
+        "Oh My God (Guns N' Roses song)"
+      ]
+    },
+    {
+      "id": "5ab56e32554299637185c594",
+      "question": "Are Random House Tower and 888 7th Avenue both used for real estate?",
+      "ground_truth": "no",
+      "predicted": "Yes, both used.",
+      "correct": false,
+      "reasoning": "The agent's answer states that both Random House Tower and 888 7th Avenue are used for real estate, which contradicts the ground truth that states they are not. Therefore, the agent's answer is incorrect due to this factual error.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Random House Tower",
+        "888 7th Avenue"
+      ],
+      "retrieved_titles": [
+        "Random House Tower"
+      ]
+    },
+    {
+      "id": "5ab6d09255429954757d337d",
+      "question": "The football manager who recruited David Beckham managed Manchester United during what timeframe?",
+      "ground_truth": "from 1986 to 2013",
+      "predicted": "1995\u201396 season",
+      "correct": false,
+      "reasoning": "The agent's answer specifies the 1995\u201396 season, which is only a part of the timeframe during which the manager managed Manchester United. The ground truth states that the manager was in charge from 1986 to 2013, which is the complete timeframe. Therefore, the agent's answer is incorrect as it does not fully address the question regarding the entire timeframe.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "1995\u201396 Manchester United F.C. season",
+        "Alex Ferguson"
+      ],
+      "retrieved_titles": [
+        "1995\u201396 Manchester United F.C. season"
+      ]
+    },
+    {
+      "id": "5a75e05c55429976ec32bc5f",
+      "question": "Brown State Fishing Lake is in a country that has a population of how many inhabitants ?",
+      "ground_truth": "9,984",
+      "predicted": "9,984 inhabitants",
+      "correct": true,
+      "reasoning": "The agent's answer matches the ground truth exactly in terms of the population figure provided. There are no factual errors or contradictions, and the answer directly addresses the question asked about the population of the country where Brown State Fishing Lake is located.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Brown State Fishing Lake",
+        "Brown County, Kansas"
+      ],
+      "retrieved_titles": [
+        "Brown State Fishing Lake"
+      ]
+    },
+    {
+      "id": "5ab3e45655429976abd1bcd4",
+      "question": "The Vermont Catamounts men's soccer team currently competes in a conference that was formerly known as what from 1988 to 1996?",
+      "ground_truth": "the North Atlantic Conference",
+      "predicted": "I don't know.",
+      "correct": false,
+      "reasoning": "The agent answer 'I don't know' is incorrect because the ground truth provides a clear answer to the question, which is 'the North Atlantic Conference.' The agent's response does not address the question and fails to provide any relevant information.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "America East Conference",
+        "Vermont Catamounts men's soccer"
+      ],
+      "retrieved_titles": [
+        "Vermont Catamounts men's soccer"
+      ]
+    },
+    {
+      "id": "5ab29c24554299449642c932",
+      "question": "Are Giuseppe Verdi and Ambroise Thomas both Opera composers ?",
+      "ground_truth": "yes",
+      "predicted": "Yes, both composers.",
+      "correct": true,
+      "reasoning": "The agent's answer correctly identifies that both Giuseppe Verdi and Ambroise Thomas are opera composers, which matches the ground truth. The response is accurate and directly addresses the question asked.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Ambroise Thomas",
+        "Giuseppe Verdi"
+      ],
+      "retrieved_titles": [
+        "Ambroise Thomas"
+      ]
+    },
+    {
+      "id": "5ae0d4c9554299603e418468",
+      "question": "Roger O. Egeberg was Assistant Secretary for Health and Scientific Affairs during the administration of a president that served during what years?",
+      "ground_truth": "1969 until 1974",
+      "predicted": "1969 to 1974",
+      "correct": true,
+      "reasoning": "The agent's answer of '1969 to 1974' matches the ground truth '1969 until 1974' semantically, as both indicate the same time period. There are no factual errors or contradictions, and the answer directly addresses the question asked.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Richard Nixon",
+        "Roger O. Egeberg"
+      ],
+      "retrieved_titles": [
+        "Roger O. Egeberg"
+      ]
+    },
+    {
+      "id": "5a8133725542995ce29dcbdb",
+      "question": "Which writer was from England, Henry Roth or Robert Erskine Childers?",
+      "ground_truth": "Robert Erskine Childers DSC",
+      "predicted": "Robert Erskine Childers.",
+      "correct": true,
+      "reasoning": "The agent's answer correctly identifies Robert Erskine Childers as the writer from England, which matches the ground truth. There are no factual errors, and the answer directly addresses the question asked.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Robert Erskine Childers",
+        "Henry Roth"
+      ],
+      "retrieved_titles": [
+        "Robert Erskine Childers"
+      ]
+    }
+  ]
+}

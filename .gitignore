@@ -1,1 +1,26 @@
-.DS_Store
+# API keys and secrets
+.env
+*.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+
+# virtual environments
+SEAL-RAG/.venv/
+ares-env/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# HuggingFace cache
+.cache/
+
+# large data files
+*.parquet
+*.arrow
+*.pt
+ARES/
+SEAL-RAG/
