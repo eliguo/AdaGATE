@@ -24,3 +24,5 @@ ares-env/
 *.pt
 ARES/
 SEAL-RAG/
+nq_few_shot_prompt_for_judge_scoring.tsv
+*_ares_input.tsv
