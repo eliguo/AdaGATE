@@ -1,0 +1,1823 @@
+{
+  "summary": {
+    "controller": "seal_rag",
+    "model": "openai:gpt-4o-mini",
+    "retriever_k": 3,
+    "repair_loop": 1,
+    "n_total": 100,
+    "n_valid": 100,
+    "n_errors": 0,
+    "accuracy": 0.58,
+    "avg_precision": 0.895,
+    "avg_recall": 0.465,
+    "avg_f1": 0.6083,
+    "timestamp": "20260327_231245"
+  },
+  "results": [
+    {
+      "id": "5a8b57f25542995d1e6f1371",
+      "question": "Were Scott Derrickson and Ed Wood of the same nationality?",
+      "ground_truth": "yes",
+      "predicted": "Yes, both American.",
+      "correct": true,
+      "reasoning": "The agent's answer correctly identifies both Scott Derrickson and Ed Wood as American, which matches the ground truth that confirms their nationality. Therefore, the answer is correct and directly addresses the question.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Scott Derrickson",
+        "Ed Wood"
+      ],
+      "retrieved_titles": [
+        "Scott Derrickson"
+      ]
+    },
+    {
+      "id": "5a8c7595554299585d9e36b6",
+      "question": "What government position was held by the woman who portrayed Corliss Archer in the film Kiss and Tell?",
+      "ground_truth": "Chief of Protocol",
+      "predicted": "Ambassador to Ghana.",
+      "correct": false,
+      "reasoning": "The agent's answer states that the woman who portrayed Corliss Archer in the film 'Kiss and Tell' held the position of Ambassador to Ghana, which is factually incorrect. The ground truth indicates that she held the position of Chief of Protocol. Since the agent's answer contradicts the ground truth, it is not correct.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Kiss and Tell (1945 film)",
+        "Shirley Temple"
+      ],
+      "retrieved_titles": [
+        "Kiss and Tell (1945 film)"
+      ]
+    },
+    {
+      "id": "5a85ea095542994775f606a8",
+      "question": "What science fantasy young adult series, told in first person, has a set of companion books narrating the stories of enslaved worlds and alien species?",
+      "ground_truth": "Animorphs",
+      "predicted": "Animorphs series",
+      "correct": true,
+      "reasoning": "The agent answer 'Animorphs series' is correct as it refers to the same series as the ground truth 'Animorphs'. Both answers refer to the same work, and the agent's answer is a broader term that includes the specific title. There are no factual errors or contradictions, and it directly addresses the question asked.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Animorphs",
+        "The Hork-Bajir Chronicles"
+      ],
+      "retrieved_titles": [
+        "The Hork-Bajir Chronicles"
+      ]
+    },
+    {
+      "id": "5adbf0a255429947ff17385a",
+      "question": "Are the Laleli Mosque and Esma Sultan Mansion located in the same neighborhood?",
+      "ground_truth": "no",
+      "predicted": "Different neighborhoods.",
+      "correct": false,
+      "reasoning": "The agent's answer states that the Laleli Mosque and Esma Sultan Mansion are in different neighborhoods, which contradicts the ground truth that indicates they are in the same neighborhood. Therefore, the answer is incorrect.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Esma Sultan Mansion",
+        "Laleli Mosque"
+      ],
+      "retrieved_titles": [
+        "Esma Sultan Mansion"
+      ]
+    },
+    {
+      "id": "5a8e3ea95542995a26add48d",
+      "question": "The director of the romantic comedy \"Big Stone Gap\" is based in what New York city?",
+      "ground_truth": "Greenwich Village, New York City",
+      "predicted": "Greenwich Village, New York City",
+      "correct": true,
+      "reasoning": "The agent's answer matches the ground truth exactly, providing the correct location of the director of 'Big Stone Gap'. There are no factual errors or contradictions, and it directly addresses the question asked.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Adriana Trigiani",
+        "Big Stone Gap (film)"
+      ],
+      "retrieved_titles": [
+        "Big Stone Gap (film)"
+      ]
+    },
+    {
+      "id": "5abd94525542992ac4f382d2",
+      "question": "2014 S/S is the debut album of a South Korean boy group that was formed by who?",
+      "ground_truth": "YG Entertainment",
+      "predicted": "YG Entertainment.",
+      "correct": true,
+      "reasoning": "The agent answer correctly identifies YG Entertainment as the entity that formed the South Korean boy group associated with the debut album '2014 S/S'. This matches the ground truth without any factual errors or omissions.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "2014 S/S",
+        "Winner (band)"
+      ],
+      "retrieved_titles": [
+        "2014 S/S"
+      ]
+    },
+    {
+      "id": "5a85b2d95542997b5ce40028",
+      "question": "Who was known by his stage name Aladin and helped organizations improve their performance as a consultant?",
+      "ground_truth": "Eenasul Fateh",
+      "predicted": "Eenasul Fateh",
+      "correct": true,
+      "reasoning": "The agent answer matches the ground truth exactly, providing the correct name associated with the stage name Aladin and the role of a consultant. There are no factual errors or contradictions, and it directly addresses the question asked.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Management consulting",
+        "Eenasul Fateh"
+      ],
+      "retrieved_titles": [
+        "Eenasul Fateh"
+      ]
+    },
+    {
+      "id": "5a87ab905542996e4f3088c1",
+      "question": "The arena where the Lewiston Maineiacs played their home games can seat how many people?",
+      "ground_truth": "3,677 seated",
+      "predicted": "3,677 seated.",
+      "correct": true,
+      "reasoning": "The agent's answer matches the ground truth exactly in terms of the seating capacity of the arena where the Lewiston Maineiacs played their home games. There are no factual errors or contradictions, and the answer directly addresses the question asked.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Lewiston Maineiacs",
+        "Androscoggin Bank Colis\u00e9e"
+      ],
+      "retrieved_titles": [
+        "Androscoggin Bank Colis\u00e9e"
+      ]
+    },
+    {
+      "id": "5a7bbb64554299042af8f7cc",
+      "question": "Who is older, Annie Morton or Terry Richardson?",
+      "ground_truth": "Terry Richardson",
+      "predicted": "Terry Richardson.",
+      "correct": true,
+      "reasoning": "The agent answer correctly identifies Terry Richardson as the older individual, matching the ground truth. There are no factual errors, and the answer directly addresses the question asked.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Annie Morton",
+        "Terry Richardson"
+      ],
+      "retrieved_titles": [
+        "Annie Morton"
+      ]
+    },
+    {
+      "id": "5a8db19d5542994ba4e3dd00",
+      "question": "Are Local H and For Against both from the United States?",
+      "ground_truth": "yes",
+      "predicted": "Yes, both are.",
+      "correct": true,
+      "reasoning": "The agent's answer correctly confirms that both Local H and For Against are from the United States, which matches the ground truth. The answer is accurate and directly addresses the question asked.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Local H",
+        "For Against"
+      ],
+      "retrieved_titles": [
+        "Local H"
+      ]
+    },
+    {
+      "id": "5a7166395542994082a3e814",
+      "question": "What is the name of the fight song of the university whose main campus is in Lawrence, Kansas and whose branch campuses are in the Kansas City metropolitan area?",
+      "ground_truth": "Kansas Song",
+      "predicted": "Kansas Song (We\u2019re From Kansas)",
+      "correct": true,
+      "reasoning": "The agent answer includes the correct name of the fight song, 'Kansas Song', but adds an unnecessary phrase 'We\u2019re From Kansas'. Since the question only asks for the name of the fight song, the additional phrase does not affect the correctness of the main answer. Therefore, the answer is considered correct as it matches the ground truth semantically.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "University of Kansas",
+        "Kansas Song"
+      ],
+      "retrieved_titles": [
+        "Kansas Song"
+      ]
+    },
+    {
+      "id": "5a877e5d5542993e715abf7d",
+      "question": "What screenwriter with credits for \"Evolution\" co-wrote a film starring Nicolas Cage and T\u00e9a Leoni?",
+      "ground_truth": "David Weissman",
+      "predicted": "David Weissman",
+      "correct": true,
+      "reasoning": "The agent answer matches the ground truth exactly, providing the correct name of the screenwriter who co-wrote a film starring Nicolas Cage and T\u00e9a Leoni. There are no factual errors or contradictions, and the answer directly addresses the question asked.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "The Family Man",
+        "David Weissman"
+      ],
+      "retrieved_titles": [
+        "The Family Man"
+      ]
+    },
+    {
+      "id": "5ab3b0bf5542992ade7c6e39",
+      "question": "What year did Guns N Roses perform a promo for a movie starring Arnold Schwarzenegger as a former New York Police detective?",
+      "ground_truth": "1999",
+      "predicted": "1999",
+      "correct": true,
+      "reasoning": "The agent's answer of 1999 matches the ground truth exactly, indicating that it is correct. There are no factual errors or contradictions in the response.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Oh My God (Guns N' Roses song)",
+        "End of Days (film)"
+      ],
+      "retrieved_titles": [
+        "Oh My God (Guns N' Roses song)"
+      ]
+    },
+    {
+      "id": "5ab56e32554299637185c594",
+      "question": "Are Random House Tower and 888 7th Avenue both used for real estate?",
+      "ground_truth": "no",
+      "predicted": "Yes, both used.",
+      "correct": false,
+      "reasoning": "The agent's answer states that both Random House Tower and 888 7th Avenue are used for real estate, which contradicts the ground truth that states they are not. Therefore, the agent's answer is incorrect.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "888 7th Avenue",
+        "Random House Tower"
+      ],
+      "retrieved_titles": [
+        "Random House Tower"
+      ]
+    },
+    {
+      "id": "5ab6d09255429954757d337d",
+      "question": "The football manager who recruited David Beckham managed Manchester United during what timeframe?",
+      "ground_truth": "from 1986 to 2013",
+      "predicted": "1995\u201396 season",
+      "correct": false,
+      "reasoning": "The agent's answer specifies the 1995\u201396 season, which is only a part of the timeframe during which the manager managed Manchester United. The ground truth states that the manager was in charge from 1986 to 2013, which is the complete timeframe. Therefore, the agent's answer is incorrect as it does not fully address the question regarding the entire timeframe.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Alex Ferguson",
+        "1995\u201396 Manchester United F.C. season"
+      ],
+      "retrieved_titles": [
+        "1995\u201396 Manchester United F.C. season"
+      ]
+    },
+    {
+      "id": "5a75e05c55429976ec32bc5f",
+      "question": "Brown State Fishing Lake is in a country that has a population of how many inhabitants ?",
+      "ground_truth": "9,984",
+      "predicted": "I don't know.",
+      "correct": false,
+      "reasoning": "The agent's answer 'I don't know' is incorrect because the ground truth provides a clear and specific population figure of 9,984. The question asks for a specific number, and since the information is available, the agent should have provided that number instead of stating uncertainty.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Brown County, Kansas",
+        "Brown State Fishing Lake"
+      ],
+      "retrieved_titles": [
+        "Brown State Fishing Lake"
+      ]
+    },
+    {
+      "id": "5ab3e45655429976abd1bcd4",
+      "question": "The Vermont Catamounts men's soccer team currently competes in a conference that was formerly known as what from 1988 to 1996?",
+      "ground_truth": "the North Atlantic Conference",
+      "predicted": "I don't know.",
+      "correct": false,
+      "reasoning": "The agent answer 'I don't know' is incorrect because the ground truth provides a clear answer to the question, which is 'the North Atlantic Conference.' The agent's response does not address the question and fails to provide any relevant information.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "America East Conference",
+        "Vermont Catamounts men's soccer"
+      ],
+      "retrieved_titles": [
+        "Vermont Catamounts men's soccer"
+      ]
+    },
+    {
+      "id": "5ab29c24554299449642c932",
+      "question": "Are Giuseppe Verdi and Ambroise Thomas both Opera composers ?",
+      "ground_truth": "yes",
+      "predicted": "Yes, both composers.",
+      "correct": true,
+      "reasoning": "The agent's answer correctly identifies that both Giuseppe Verdi and Ambroise Thomas are opera composers, which matches the ground truth. The response is accurate and directly addresses the question asked.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Giuseppe Verdi",
+        "Ambroise Thomas"
+      ],
+      "retrieved_titles": [
+        "Ambroise Thomas"
+      ]
+    },
+    {
+      "id": "5ae0d4c9554299603e418468",
+      "question": "Roger O. Egeberg was Assistant Secretary for Health and Scientific Affairs during the administration of a president that served during what years?",
+      "ground_truth": "1969 until 1974",
+      "predicted": "1969 to 1974",
+      "correct": true,
+      "reasoning": "The agent's answer of '1969 to 1974' matches the ground truth '1969 until 1974' semantically, as both indicate the same time period. There are no factual errors or contradictions, and the answer directly addresses the question asked.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Richard Nixon",
+        "Roger O. Egeberg"
+      ],
+      "retrieved_titles": [
+        "Roger O. Egeberg"
+      ]
+    },
+    {
+      "id": "5a8133725542995ce29dcbdb",
+      "question": "Which writer was from England, Henry Roth or Robert Erskine Childers?",
+      "ground_truth": "Robert Erskine Childers DSC",
+      "predicted": "Robert Erskine Childers.",
+      "correct": true,
+      "reasoning": "The agent's answer correctly identifies Robert Erskine Childers as the writer from England, which matches the ground truth. There are no factual errors or contradictions in the response, and it directly addresses the question asked.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Robert Erskine Childers",
+        "Henry Roth"
+      ],
+      "retrieved_titles": [
+        "Robert Erskine Childers"
+      ]
+    },
+    {
+      "id": "5ae7a8175542993210983ed8",
+      "question": "Which other Mexican Formula One race car driver has held the podium besides the Force India driver born in 1990?",
+      "ground_truth": "Pedro Rodr\u00edguez",
+      "predicted": "I don't know.",
+      "correct": false,
+      "reasoning": "The agent answer 'I don't know' is incorrect because the ground truth clearly identifies Pedro Rodr\u00edguez as the other Mexican Formula One driver who has held a podium. The question is specific and the information is available, so the agent should have provided the correct name instead of stating uncertainty.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Sergio P\u00e9rez",
+        "Formula One drivers from Mexico"
+      ],
+      "retrieved_titles": [
+        "Formula One drivers from Mexico"
+      ]
+    },
+    {
+      "id": "5ae6050f55429929b0807a5e",
+      "question": "This singer of A Rather Blustery Day also voiced what hedgehog?",
+      "ground_truth": "Sonic",
+      "predicted": "I don't know.",
+      "correct": false,
+      "reasoning": "The agent's answer 'I don't know' is incorrect because the question clearly asks for information that is available in the ground truth. The singer of 'A Rather Blustery Day' is known to have voiced Sonic the Hedgehog, which is a clear and factual answer. Therefore, the agent's response does not address the question and fails to provide the correct information.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Jim Cummings",
+        "A Rather Blustery Day"
+      ],
+      "retrieved_titles": [
+        "A Rather Blustery Day"
+      ]
+    },
+    {
+      "id": "5adddccd5542997dc7907069",
+      "question": "Aside from the Apple Remote, what other device can control the program Apple Remote was originally designed to interact with?",
+      "ground_truth": "keyboard function keys",
+      "predicted": "Siri Remote",
+      "correct": false,
+      "reasoning": "The agent's answer, 'Siri Remote', is incorrect because it does not match the ground truth, which states that 'keyboard function keys' can control the program. The Siri Remote is a different device and does not address the specific request for alternatives to the Apple Remote as indicated in the ground truth.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Front Row (software)",
+        "Apple Remote"
+      ],
+      "retrieved_titles": [
+        "Apple Remote"
+      ]
+    },
+    {
+      "id": "5ae2070a5542994d89d5b313",
+      "question": "Which performance act has a higher instrument to person ratio, Badly Drawn Boy or Wolf Alice? ",
+      "ground_truth": "Badly Drawn Boy",
+      "predicted": "I don't know.",
+      "correct": false,
+      "reasoning": "The agent's answer 'I don't know' is incorrect because the ground truth clearly states that Badly Drawn Boy has a higher instrument to person ratio compared to Wolf Alice. The question has a definitive answer, and the agent should have provided that instead of stating uncertainty.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Badly Drawn Boy",
+        "Wolf Alice"
+      ],
+      "retrieved_titles": [
+        "Wolf Alice"
+      ]
+    },
+    {
+      "id": "5ae22b8d554299234fd0440f",
+      "question": "What was the father of Kasper Schmeichel voted to be by the IFFHS in 1992?",
+      "ground_truth": "World's Best Goalkeeper",
+      "predicted": "IFFHS World's Best Goalkeeper",
+      "correct": true,
+      "reasoning": "The agent's answer, 'IFFHS World's Best Goalkeeper', is semantically correct as it conveys the same meaning as the ground truth 'World's Best Goalkeeper'. The additional context of 'IFFHS' does not contradict the ground truth and is relevant to the question asked. Therefore, the answer is correct.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Kasper Schmeichel",
+        "Peter Schmeichel"
+      ],
+      "retrieved_titles": [
+        "Peter Schmeichel"
+      ]
+    },
+    {
+      "id": "5a722b8655429971e9dc9329",
+      "question": "Who was the writer of These Boots Are Made for Walkin' and who died in 2007?",
+      "ground_truth": "Barton Lee Hazlewood",
+      "predicted": "Lee Hazlewood; I don't know.",
+      "correct": false,
+      "reasoning": "The agent correctly identifies Lee Hazlewood as the writer of 'These Boots Are Made for Walkin'' but fails to provide the full name 'Barton Lee Hazlewood' as stated in the ground truth. Additionally, the response includes 'I don't know,' which is unnecessary since the question is clear and the information is available. Therefore, the answer is not fully correct.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Lee Hazlewood",
+        "These Boots Are Made for Walkin'"
+      ],
+      "retrieved_titles": [
+        "These Boots Are Made for Walkin'"
+      ]
+    },
+    {
+      "id": "5adf37a95542995ec70e8f97",
+      "question": "The 2011\u201312 VCU Rams men's basketball team, led by third year head coach Shaka Smart, represented Virginia Commonwealth University which was founded in what year?",
+      "ground_truth": "1838",
+      "predicted": "1838",
+      "correct": true,
+      "reasoning": "The agent's answer of 1838 matches the ground truth, which is also 1838. Therefore, the answer is correct as it accurately reflects the founding year of Virginia Commonwealth University.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "2011\u201312 VCU Rams men's basketball team",
+        "Virginia Commonwealth University"
+      ],
+      "retrieved_titles": [
+        "Virginia Commonwealth University"
+      ]
+    },
+    {
+      "id": "5abd259d55429924427fcf1a",
+      "question": "Are both Dictyosperma, and Huernia described as a genus?",
+      "ground_truth": "yes",
+      "predicted": "Yes, both genera.",
+      "correct": true,
+      "reasoning": "The agent's answer correctly identifies that both Dictyosperma and Huernia are described as genera, which aligns with the ground truth. The response is accurate and directly addresses the question asked.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Huernia",
+        "Dictyosperma"
+      ],
+      "retrieved_titles": [
+        "Dictyosperma"
+      ]
+    },
+    {
+      "id": "5a828c8355429966c78a6a50",
+      "question": "Kaiser Ventures corporation was founded by an American industrialist who became known as the father of modern American shipbuilding?",
+      "ground_truth": "Henry J. Kaiser",
+      "predicted": "Henry J. Kaiser",
+      "correct": true,
+      "reasoning": "The agent answer 'Henry J. Kaiser' matches the ground truth exactly, which is the correct name of the American industrialist known as the father of modern American shipbuilding. There are no factual errors or contradictions in the answer.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Henry J. Kaiser",
+        "Kaiser Ventures"
+      ],
+      "retrieved_titles": [
+        "Henry J. Kaiser"
+      ]
+    },
+    {
+      "id": "5a8a3e745542996c9b8d5e70",
+      "question": "What is the name for the adventure in \"Tunnels and Trolls\", a game designed by Ken St. Andre?",
+      "ground_truth": "Arena of Khazan",
+      "predicted": "I don't know.",
+      "correct": false,
+      "reasoning": "The agent's answer 'I don't know' is incorrect because the ground truth clearly states the name of the adventure as 'Arena of Khazan'. The agent should have provided this information instead of stating uncertainty.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Tunnels &amp; Trolls",
+        "Arena of Khazan"
+      ],
+      "retrieved_titles": [
+        "Tunnels &amp; Trolls"
+      ]
+    },
+    {
+      "id": "5ac23ff0554299636651994d",
+      "question": "When was Poison's album \"Shut Up, Make Love\" released?",
+      "ground_truth": "2000",
+      "predicted": "March 14, 2000",
+      "correct": true,
+      "reasoning": "The agent's answer provides a specific release date (March 14, 2000) for Poison's album \"Shut Up, Make Love,\" which is accurate as it falls within the year 2000 mentioned in the ground truth. Therefore, the answer is correct and directly addresses the question.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Poison (American band)",
+        "Shut Up, Make Love"
+      ],
+      "retrieved_titles": [
+        "Shut Up, Make Love"
+      ]
+    },
+    {
+      "id": "5ae4a3265542995ad6573de5",
+      "question": "Hayden is a singer-songwriter from Canada, but where does Buck-Tick hail from?",
+      "ground_truth": "Fujioka, Gunma",
+      "predicted": "Fujioka, Gunma.",
+      "correct": true,
+      "reasoning": "The agent's answer matches the ground truth exactly, providing the correct location of Buck-Tick. There are no factual errors or contradictions, and it directly addresses the question asked.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Hayden (musician)",
+        "Buck-Tick"
+      ],
+      "retrieved_titles": [
+        "Hayden (musician)"
+      ]
+    },
+    {
+      "id": "5ae0361155429925eb1afc2c",
+      "question": "Which  French ace pilot and adventurer fly L'Oiseau Blanc",
+      "ground_truth": "Charles Eug\u00e8ne",
+      "predicted": "Charles Nungesser, Fran\u00e7ois Coli.",
+      "correct": false,
+      "reasoning": "The agent answer provides the names of two individuals, Charles Nungesser and Fran\u00e7ois Coli, who were indeed involved in the flight of L'Oiseau Blanc. However, the question specifically asks for the name of a single French ace pilot and adventurer, which is not accurately addressed by the agent's answer. The ground truth specifies 'Charles Eug\u00e8ne', which likely refers to Charles Nungesser, but the answer does not match the question's requirement for a single name. Therefore, the answer is not correct.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "L'Oiseau Blanc",
+        "Charles Nungesser"
+      ],
+      "retrieved_titles": [
+        "L'Oiseau Blanc"
+      ]
+    },
+    {
+      "id": "5abc0a5d5542993f40c73c64",
+      "question": "Are Freakonomics and In the Realm of the Hackers both American documentaries?",
+      "ground_truth": "no",
+      "predicted": "No, not both.",
+      "correct": true,
+      "reasoning": "The agent's answer 'No, not both' correctly indicates that at least one of the documentaries is not American, which aligns with the ground truth response of 'no'. Therefore, the answer is correct as it accurately reflects the information provided in the ground truth.",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "gold_titles": [
+        "Freakonomics (film)",
+        "In the Realm of the Hackers"
+      ],
+      "retrieved_titles": [
+        "Freakonomics (film)",
+        "In the Realm of the Hackers"
+      ]
+    },
+    {
+      "id": "5a7cc50e554299452d57ba3e",
+      "question": "Which band, Letters to Cleo or Screaming Trees, had more members?",
+      "ground_truth": "Letters to Cleo",
+      "predicted": "Letters to Cleo.",
+      "correct": true,
+      "reasoning": "The agent's answer is correct because it matches the ground truth, which states that Letters to Cleo is the band in question. The question asks which band had more members, and the agent correctly identifies Letters to Cleo as the answer without any factual errors or contradictions.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Letters to Cleo",
+        "Screaming Trees"
+      ],
+      "retrieved_titles": [
+        "Screaming Trees"
+      ]
+    },
+    {
+      "id": "5abf63f15542997ec76fd3ea",
+      "question": "Alexander Kerensky was defeated and destroyed by the Bolsheviks in the course of a civil war that ended when ?",
+      "ground_truth": "October 1922",
+      "predicted": "1923.",
+      "correct": false,
+      "reasoning": "The agent's answer of 1923 is incorrect because the civil war in Russia, which involved the Bolsheviks and their opponents, officially ended in October 1922. The answer provided by the agent does not match the ground truth and contains a factual error regarding the date of the civil war's conclusion.",
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1": 0.5,
+      "gold_titles": [
+        "Socialist Revolutionary Party",
+        "Russian Civil War"
+      ],
+      "retrieved_titles": [
+        "Russian Civil War",
+        "Communism in Russia"
+      ]
+    },
+    {
+      "id": "5a8ef2a75542995a26add583",
+      "question": "Seven Brief Lessons on Physics was written by an Italian physicist that has worked in France since what year?",
+      "ground_truth": "2000",
+      "predicted": "2000",
+      "correct": true,
+      "reasoning": "The agent's answer matches the ground truth exactly, providing the correct year that the Italian physicist has worked in France since. Therefore, the answer is correct.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Carlo Rovelli",
+        "Seven Brief Lessons on Physics"
+      ],
+      "retrieved_titles": [
+        "Seven Brief Lessons on Physics"
+      ]
+    },
+    {
+      "id": "5a80721b554299485f5985ef",
+      "question": "The Livesey Hal War Memorial commemorates the fallen of which war, that had over 60 million casualties?",
+      "ground_truth": "World War II",
+      "predicted": "World War I and II",
+      "correct": false,
+      "reasoning": "The agent's answer includes both World War I and World War II, but the question specifically asks for the war that had over 60 million casualties, which is World War II. Therefore, the agent's answer is incorrect as it does not match the ground truth, which is solely World War II.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Livesey Hall War Memorial",
+        "World War II casualties"
+      ],
+      "retrieved_titles": [
+        "Livesey Hall War Memorial"
+      ]
+    },
+    {
+      "id": "5ab51dae5542991779162d82",
+      "question": "Are both Elko Regional Airport and Gerald R. Ford International Airport located in Michigan?",
+      "ground_truth": "no",
+      "predicted": "No, not both.",
+      "correct": true,
+      "reasoning": "The agent's answer 'No, not both' correctly indicates that not both airports are located in Michigan, which aligns with the ground truth response of 'no'. Therefore, the answer is correct as it accurately addresses the question without any factual errors.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Elko Regional Airport",
+        "Gerald R. Ford International Airport"
+      ],
+      "retrieved_titles": [
+        "Gerald R. Ford International Airport"
+      ]
+    },
+    {
+      "id": "5a7571135542992d0ec05f98",
+      "question": "Ralph Hefferline was a psychology professor at a university that is located in what city?",
+      "ground_truth": "New York City",
+      "predicted": "New York City.",
+      "correct": true,
+      "reasoning": "The agent's answer matches the ground truth exactly, providing the correct city where Ralph Hefferline was a psychology professor.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Columbia University",
+        "Ralph Hefferline"
+      ],
+      "retrieved_titles": [
+        "Ralph Hefferline"
+      ]
+    },
+    {
+      "id": "5a7a0e1e5542990783324e1a",
+      "question": "Which dog's ancestors include Gordon and Irish Setters: the Manchester Terrier or the Scotch Collie?",
+      "ground_truth": "Scotch Collie",
+      "predicted": "Scotch Collie.",
+      "correct": true,
+      "reasoning": "The agent answer 'Scotch Collie' matches the ground truth exactly, indicating that it is correct. The answer directly addresses the question about which dog's ancestors include Gordon and Irish Setters, and there are no factual errors.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Scotch Collie",
+        "Manchester Terrier"
+      ],
+      "retrieved_titles": [
+        "Scotch Collie"
+      ]
+    },
+    {
+      "id": "5a74106b55429979e288289e",
+      "question": "Where is the company that Sachin Warrier worked for as a software engineer headquartered? ",
+      "ground_truth": "Mumbai",
+      "predicted": "Mumbai, Maharashtra",
+      "correct": true,
+      "reasoning": "The agent's answer 'Mumbai, Maharashtra' is correct as it matches the ground truth 'Mumbai' semantically, since Mumbai is the capital city of Maharashtra. There are no factual errors, and it directly addresses the question about the company's headquarters.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Sachin Warrier",
+        "Tata Consultancy Services"
+      ],
+      "retrieved_titles": [
+        "Sachin Warrier"
+      ]
+    },
+    {
+      "id": "5a79311755429970f5fffe67",
+      "question": "A Japanese manga series based on a 16 year old high school student Ichitaka Seto, is written and illustrated by someone born in what year?",
+      "ground_truth": "1962",
+      "predicted": "1962",
+      "correct": true,
+      "reasoning": "The agent's answer of 1962 matches the ground truth, which also states 1962. Therefore, the answer is correct as it directly addresses the question and contains no factual errors.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "I&quot;s",
+        "Masakazu Katsura"
+      ],
+      "retrieved_titles": [
+        "I&quot;s"
+      ]
+    },
+    {
+      "id": "5ab2d3df554299194fa9352c",
+      "question": "The battle in which Giuseppe Arimondi lost his life secured what for Ethiopia?",
+      "ground_truth": "sovereignty",
+      "predicted": "Ethiopian sovereignty.",
+      "correct": true,
+      "reasoning": "The agent's answer 'Ethiopian sovereignty' is semantically equivalent to the ground truth 'sovereignty', as it conveys the same concept. The answer directly addresses the question about what was secured for Ethiopia as a result of the battle. There are no factual errors or contradictions present.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Giuseppe Arimondi",
+        "Battle of Adwa"
+      ],
+      "retrieved_titles": [
+        "Battle of Adwa"
+      ]
+    },
+    {
+      "id": "5a760ab65542994ccc918697",
+      "question": "Alfred Balk served as the secretary of the Committee on the Employment of Minority Groups in the News Media under which United States Vice President?",
+      "ground_truth": "Nelson Rockefeller",
+      "predicted": "I don't know.",
+      "correct": false,
+      "reasoning": "The agent answer 'I don't know' is incorrect because the ground truth clearly states that Alfred Balk served under Vice President Nelson Rockefeller. The question has a clear answer, and the agent's response does not address it, resulting in a factual contradiction.",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "gold_titles": [
+        "Nelson Rockefeller",
+        "Alfred Balk"
+      ],
+      "retrieved_titles": [
+        "Executive Order 10925"
+      ]
+    },
+    {
+      "id": "5a7d54165542995f4f402256",
+      "question": "A medieval fortress in Dirleton, East Lothian, Scotland borders on the south side of what coastal area?",
+      "ground_truth": "Yellowcraig",
+      "predicted": "Firth of Forth",
+      "correct": false,
+      "reasoning": "The agent's answer, 'Firth of Forth', is incorrect because it does not match the ground truth, which states that the coastal area bordering the south side of the medieval fortress in Dirleton is 'Yellowcraig'. The answer provided by the agent is a nearby body of water but does not directly address the specific coastal area mentioned in the question.",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "gold_titles": [
+        "Yellowcraigs",
+        "Dirleton Castle"
+      ],
+      "retrieved_titles": [
+        "Dirleton"
+      ]
+    },
+    {
+      "id": "5ab859a955429934fafe6d7b",
+      "question": "Who is the writer of this song that was inspired by words on a tombstone and was the first track on the box set Back to Mono?",
+      "ground_truth": "Phil Spector",
+      "predicted": "Phil Spector",
+      "correct": true,
+      "reasoning": "The agent answer correctly identifies Phil Spector as the writer of the song inspired by words on a tombstone and the first track on the box set Back to Mono. There are no factual errors, and it directly addresses the question asked.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Back to Mono (1958\u20131969)",
+        "To Know Him Is to Love Him"
+      ],
+      "retrieved_titles": [
+        "Back to Mono (1958\u20131969)"
+      ]
+    },
+    {
+      "id": "5add61d65542995b365fab21",
+      "question": "What type of forum did a former Soviet statesman initiate?",
+      "ground_truth": "Organizations could come together to address global issues",
+      "predicted": "Peace forum.",
+      "correct": false,
+      "reasoning": "The agent answer 'Peace forum' does not fully address the question about the type of forum initiated by a former Soviet statesman, as it lacks the context of organizations coming together to address global issues. While 'Peace forum' could be a type of forum, it does not capture the broader purpose described in the ground truth. Therefore, the answer is not correct.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Mikhail Gorbachev",
+        "World Summit of Nobel Peace Laureates"
+      ],
+      "retrieved_titles": [
+        "World Summit of Nobel Peace Laureates"
+      ]
+    },
+    {
+      "id": "5a8e068b5542995085b37384",
+      "question": "Are Ferocactus and Silene both types of plant?",
+      "ground_truth": "yes",
+      "predicted": "Yes, both are plants.",
+      "correct": true,
+      "reasoning": "The agent's answer correctly identifies that both Ferocactus and Silene are types of plants, which matches the ground truth. The answer is accurate and directly addresses the question asked.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Ferocactus",
+        "Silene"
+      ],
+      "retrieved_titles": [
+        "Ferocactus"
+      ]
+    },
+    {
+      "id": "5abbf698554299114383a0b5",
+      "question": "Which British first-generation jet-powered medium bomber was used in the South West Pacific theatre of World War II?",
+      "ground_truth": "English Electric Canberra",
+      "predicted": "I don't know.",
+      "correct": false,
+      "reasoning": "The agent answer 'I don't know' is incorrect because the question has a clear answer, which is the English Electric Canberra. The agent's response does not provide any relevant information and fails to address the question directly.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "No. 2 Squadron RAAF",
+        "English Electric Canberra"
+      ],
+      "retrieved_titles": [
+        "English Electric Canberra"
+      ]
+    },
+    {
+      "id": "5a8e1027554299653c1aa15f",
+      "question": "Which year and which conference was the 14th season for this conference as part of the NCAA Division that the Colorado Buffaloes played in with a record of 2-6 in conference play?",
+      "ground_truth": "2009 Big 12 Conference",
+      "predicted": "I don't know.",
+      "correct": false,
+      "reasoning": "The agent's answer of 'I don't know' is incorrect because the ground truth provides a clear answer: the year is 2009 and the conference is the Big 12 Conference. The question is straightforward and does not require any ambiguous interpretation, so a definitive answer should have been provided instead of stating uncertainty.",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "gold_titles": [
+        "2009 Big 12 Conference football season",
+        "2009 Colorado Buffaloes football team"
+      ],
+      "retrieved_titles": [
+        "2014\u201315 Colorado Buffaloes men's basketball team",
+        "2015\u201316 Colorado Buffaloes men's basketball team"
+      ]
+    },
+    {
+      "id": "5ab84bf555429916710eb01f",
+      "question": "In 1991 Euromarch\u00e9 was bought by a chain that operated how any hypermarkets at the end of 2016?",
+      "ground_truth": "1,462",
+      "predicted": "1,462 hypermarkets",
+      "correct": true,
+      "reasoning": "The agent's answer of '1,462 hypermarkets' matches the ground truth exactly, which is also '1,462'. Therefore, the answer is correct and directly addresses the question asked.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Carrefour",
+        "Euromarch\u00e9"
+      ],
+      "retrieved_titles": [
+        "Euromarch\u00e9"
+      ]
+    },
+    {
+      "id": "5a77724455429972597f153e",
+      "question": "What race track in the midwest hosts a 500 mile race eavery May?",
+      "ground_truth": "Indianapolis Motor Speedway",
+      "predicted": "Indianapolis Motor Speedway",
+      "correct": true,
+      "reasoning": "The agent's answer matches the ground truth exactly, both identifying the Indianapolis Motor Speedway as the race track that hosts a 500 mile race every May. There are no factual errors or contradictions, and the answer directly addresses the question asked.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "1957 Indianapolis 500",
+        "Indianapolis Motor Speedway"
+      ],
+      "retrieved_titles": [
+        "Indianapolis Motor Speedway"
+      ]
+    },
+    {
+      "id": "5a87c13f5542996e4f30890c",
+      "question": "In what city did the \"Prince of tenors\" star in a film based on an opera by Giacomo Puccini?",
+      "ground_truth": "Rome",
+      "predicted": "I don't know.",
+      "correct": false,
+      "reasoning": "The agent's answer 'I don't know' is incorrect because the ground truth clearly states that the city is Rome. The question asks for a specific city related to a film starring the 'Prince of tenors' based on an opera by Giacomo Puccini, which is a clear and factual inquiry. Therefore, the agent's response does not address the question and fails to provide the correct information.",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "gold_titles": [
+        "Tosca (1956 film)",
+        "Franco Corelli"
+      ],
+      "retrieved_titles": [
+        "Festival Puccini"
+      ]
+    },
+    {
+      "id": "5ab96ab755429970cfb8eacd",
+      "question": "Ellie Goulding worked with what other writers on her third studio album, Delirium?",
+      "ground_truth": "Max Martin, Savan Kotecha and Ilya Salmanzadeh",
+      "predicted": "I don't know.",
+      "correct": false,
+      "reasoning": "The agent answer 'I don't know' is not acceptable because the ground truth provides clear information about the writers Ellie Goulding worked with on her album 'Delirium'. The question is straightforward, and the answer should reflect the known facts rather than expressing uncertainty.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "On My Mind (Ellie Goulding song)",
+        "Delirium (Ellie Goulding album)"
+      ],
+      "retrieved_titles": [
+        "Delirium (Ellie Goulding album)"
+      ]
+    },
+    {
+      "id": "5a8a43eb5542996c9b8d5e82",
+      "question": "Which Australian city founded in 1838 contains a boarding school opened by a Prime Minister of Australia and named after a school in London of the same name.",
+      "ground_truth": "Marion, South Australia",
+      "predicted": "Adelaide.",
+      "correct": false,
+      "reasoning": "The agent's answer, 'Adelaide', is incorrect because the question specifically asks for a city that was founded in 1838 and contains a boarding school opened by a Prime Minister of Australia, which is named after a school in London. The correct answer is 'Marion, South Australia', which meets all the criteria outlined in the question. Therefore, the agent's answer does not match the ground truth and contains a factual error.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Marion, South Australia",
+        "Westminster School, Adelaide"
+      ],
+      "retrieved_titles": [
+        "Westminster School, Adelaide"
+      ]
+    },
+    {
+      "id": "5ae73acb5542991e8301cc07",
+      "question": "D1NZ is a series based on what oversteering technique?",
+      "ground_truth": "Drifting",
+      "predicted": "Drifting technique.",
+      "correct": true,
+      "reasoning": "The agent's answer 'Drifting technique' is semantically correct as it refers to the same concept as 'Drifting' in the ground truth. However, it is slightly more verbose than necessary. The core term 'Drifting' is present in both the agent's answer and the ground truth, indicating that the answer is fundamentally correct. Therefore, it directly addresses the question asked without any factual errors.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Drifting (motorsport)",
+        "D1NZ"
+      ],
+      "retrieved_titles": [
+        "Drifting (motorsport)"
+      ]
+    },
+    {
+      "id": "5a7320565542991f9a20c61d",
+      "question": "who is younger Keith Bostic or Jerry Glanville ?",
+      "ground_truth": "Keith Bostic",
+      "predicted": "Keith Bostic.",
+      "correct": true,
+      "reasoning": "The agent answer correctly identifies Keith Bostic as the younger individual, which matches the ground truth. Since the question specifically asks who is younger and the answer provided is accurate, it directly addresses the question without any factual errors.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Keith Bostic (American football)",
+        "Jerry Glanville"
+      ],
+      "retrieved_titles": [
+        "Jerry Glanville"
+      ]
+    },
+    {
+      "id": "5ae32e125542991a06ce9946",
+      "question": "According to the 2001 census, what was the population of the city in which Kirton End is located?",
+      "ground_truth": "35,124",
+      "predicted": "I don't know.",
+      "correct": false,
+      "reasoning": "The agent answer 'I don't know' is incorrect because the ground truth provides a clear population figure for the city where Kirton End is located. The question is straightforward and does not require subjective interpretation, so a definitive answer should be provided instead of an admission of ignorance.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Boston, Lincolnshire",
+        "Kirton End"
+      ],
+      "retrieved_titles": [
+        "Kirton End"
+      ]
+    },
+    {
+      "id": "5adc53f75542996e6852530a",
+      "question": "Are both Cypress and Ajuga genera?",
+      "ground_truth": "no",
+      "predicted": "Yes, both are genera.",
+      "correct": false,
+      "reasoning": "The agent's answer is incorrect because it states that both Cypress and Ajuga are genera, while the ground truth specifies that this is not the case. Cypress is not a recognized genus; the correct term is 'Cypressus' for the genus of cypress trees. Therefore, the agent's response contains a factual error and does not match the ground truth.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Cypress",
+        "Ajuga"
+      ],
+      "retrieved_titles": [
+        "Ajuga"
+      ]
+    },
+    {
+      "id": "5a8b20335542996c9b8d5fb3",
+      "question": "What distinction is held by the former NBA player who was a member of the Charlotte Hornets during their 1992-93 season and was head coach for the WNBA team Charlotte Sting?",
+      "ground_truth": "shortest player ever to play in the National Basketball Association",
+      "predicted": "I don't know.",
+      "correct": false,
+      "reasoning": "The agent answer 'I don't know' is incorrect because the ground truth provides a clear and specific fact about the former NBA player, which is that he is the shortest player ever to play in the NBA. The question asks for a distinction held by this player, and the ground truth directly addresses that. Therefore, the agent's response fails to engage with the question and does not provide any relevant information.",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "gold_titles": [
+        "Muggsy Bogues",
+        "1992\u201393 Charlotte Hornets season"
+      ],
+      "retrieved_titles": [
+        "2003 WNBA season"
+      ]
+    },
+    {
+      "id": "5a85fb085542994775f606de",
+      "question": "What is the name of the executive producer of the film that has a score composed by Jerry Goldsmith?",
+      "ground_truth": "Ronald Shusett",
+      "predicted": "I don't know.",
+      "correct": false,
+      "reasoning": "The agent answer 'I don't know' is incorrect because the ground truth provides a clear answer: Ronald Shusett is the executive producer of the film with a score composed by Jerry Goldsmith. The agent's response fails to address the question and does not provide any relevant information.",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "gold_titles": [
+        "Alien (soundtrack)",
+        "Alien (film)"
+      ],
+      "retrieved_titles": [
+        "Legend (film score)"
+      ]
+    },
+    {
+      "id": "5a7be2595542997c3ec972ac",
+      "question": "Who was born earlier, Emma Bull or Virginia Woolf?",
+      "ground_truth": "Adeline Virginia Woolf",
+      "predicted": "Virginia Woolf.",
+      "correct": true,
+      "reasoning": "The agent's answer correctly identifies Virginia Woolf as the person who was born earlier, as she was born in 1882, while Emma Bull was born in 1954. The answer matches the ground truth semantically, as it refers to the same individual, even though it does not include her full name. There are no factual errors, and it directly addresses the question asked.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Emma Bull",
+        "Virginia Woolf"
+      ],
+      "retrieved_titles": [
+        "Emma Bull"
+      ]
+    },
+    {
+      "id": "5a77152355429966f1a36c2e",
+      "question": "What was the Roud Folk Song Index of the nursery rhyme inspiring What Are Little Girls Made Of?",
+      "ground_truth": "821",
+      "predicted": "I don't know.",
+      "correct": false,
+      "reasoning": "The agent's answer 'I don't know' is incorrect because the ground truth provides a clear and specific answer (821) to the question about the Roud Folk Song Index. The agent should have provided this information instead of stating uncertainty.",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "gold_titles": [
+        "What Are Little Girls Made Of?",
+        "What Are Little Boys Made Of?"
+      ],
+      "retrieved_titles": [
+        "What Are Little Boys Made Of?",
+        "What Are Little Girls Made Of?"
+      ]
+    },
+    {
+      "id": "5a8f4c8d554299458435d5a3",
+      "question": "Scott Parkin has been a vocal critic of Exxonmobil and another corporation that has operations in how many countries ?",
+      "ground_truth": "more than 70 countries",
+      "predicted": "I don't know.",
+      "correct": false,
+      "reasoning": "The agent answer 'I don't know' is incorrect because the ground truth clearly states that the corporation operates in more than 70 countries. The question is straightforward, and the information is available, so a response of 'I don't know' is not acceptable.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Scott Parkin",
+        "Halliburton"
+      ],
+      "retrieved_titles": [
+        "Scott Parkin"
+      ]
+    },
+    {
+      "id": "5a80840f554299485f59863b",
+      "question": "What WB supernatrual drama series was Jawbreaker star Rose Mcgowan best known for being in?",
+      "ground_truth": "Charmed",
+      "predicted": "Charmed",
+      "correct": true,
+      "reasoning": "The agent answer 'Charmed' matches the ground truth exactly, indicating that it is correct. Rose McGowan is indeed best known for her role in the supernatural drama series 'Charmed'.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Rose McGowan",
+        "Jawbreaker (film)"
+      ],
+      "retrieved_titles": [
+        "Jawbreaker (film)"
+      ]
+    },
+    {
+      "id": "5a8361b65542992ef85e22a0",
+      "question": "Vince Phillips held a junior welterweight title by an organization recognized by what larger Hall of Fame?",
+      "ground_truth": "International Boxing Hall of Fame",
+      "predicted": "International Boxing Hall of Fame",
+      "correct": true,
+      "reasoning": "The agent's answer matches the ground truth exactly, both stating that Vince Phillips held a junior welterweight title recognized by the International Boxing Hall of Fame. There are no factual errors or contradictions, and the answer directly addresses the question asked.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "International Boxing Federation",
+        "Vince Phillips"
+      ],
+      "retrieved_titles": [
+        "Vince Phillips"
+      ]
+    },
+    {
+      "id": "5ae7ba7a5542993210983f12",
+      "question": "What is the name of the singer who's song was released as the lead single from the album \"Confessions\", and that had popular song stuck behind for eight consecutive weeks?",
+      "ground_truth": "Usher",
+      "predicted": "Usher",
+      "correct": true,
+      "reasoning": "The agent answer 'Usher' matches the ground truth exactly, as both refer to the same singer who released the lead single from the album 'Confessions'. There are no factual errors or contradictions, and the answer directly addresses the question asked.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Yeah! (Usher song)",
+        "I Don't Wanna Know"
+      ],
+      "retrieved_titles": [
+        "Yeah! (Usher song)"
+      ]
+    },
+    {
+      "id": "5ac2acff55429921a00ab02b",
+      "question": "who is the younger brother of The episode guest stars of The Hard Easy ",
+      "ground_truth": "Bill Murray",
+      "predicted": "Cecil.",
+      "correct": false,
+      "reasoning": "The agent answer 'Cecil' does not match the ground truth 'Bill Murray', which indicates a factual error. The question specifically asks for the younger brother of the episode guest stars of 'The Hard Easy', and the correct answer is Bill Murray, not Cecil. Therefore, the answer is incorrect.",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "gold_titles": [
+        "Brian Doyle-Murray",
+        "The Hard Easy (Adventure Time)"
+      ],
+      "retrieved_titles": [
+        "Brother from Another Series"
+      ]
+    },
+    {
+      "id": "5aba7cfe554299232ef4a2fd",
+      "question": "The 2017\u201318 Wigan Athletic F.C. season will be a year in which the team competes in the league cup known as what for sponsorship reasons?",
+      "ground_truth": "Carabao Cup",
+      "predicted": "Carabao Cup",
+      "correct": true,
+      "reasoning": "The agent's answer 'Carabao Cup' matches the ground truth exactly, both semantically and factually. It directly addresses the question about the league cup for the 2017\u201318 Wigan Athletic F.C. season.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "EFL Cup",
+        "2017\u201318 Wigan Athletic F.C. season"
+      ],
+      "retrieved_titles": [
+        "EFL Cup"
+      ]
+    },
+    {
+      "id": "5ae5aba0554299546bf82f17",
+      "question": "Which of Tara Strong major voice role in animated series is an American animated television series based on the DC Comics fictional superhero team, the \"Teen Titans\"?",
+      "ground_truth": "Teen Titans Go!",
+      "predicted": "Raven.",
+      "correct": false,
+      "reasoning": "The agent answer 'Raven' is not correct because it does not directly answer the question about the title of the animated series. The question asks for the name of the series, which is 'Teen Titans Go!', while the agent only provided the name of a character from that series. Therefore, the answer does not match the ground truth and does not address the question asked.",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "gold_titles": [
+        "Teen Titans Go! (TV series)",
+        "Tara Strong"
+      ],
+      "retrieved_titles": [
+        "List of Teen Titans episodes"
+      ]
+    },
+    {
+      "id": "5ae1f4cb554299234fd0436d",
+      "question": "What is the inhabitant of the city where  122nd SS-Standarte was formed in2014",
+      "ground_truth": "276,170 inhabitants",
+      "predicted": "276,170 inhabitants",
+      "correct": true,
+      "reasoning": "The agent's answer matches the ground truth exactly in terms of the number of inhabitants, which is 276,170. Therefore, it is correct as it directly addresses the question asked about the number of inhabitants of the city where the 122nd SS-Standarte was formed in 2014.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Strasbourg",
+        "122nd SS-Standarte"
+      ],
+      "retrieved_titles": [
+        "Strasbourg"
+      ]
+    },
+    {
+      "id": "5ae7e1fc55429952e35ea9cc",
+      "question": "What color clothing do people of the Netherlands wear during Oranjegekte or to celebrate the national holiday Koningsdag? ",
+      "ground_truth": "orange",
+      "predicted": "Orange clothing.",
+      "correct": true,
+      "reasoning": "The agent's answer 'Orange clothing' matches the ground truth 'orange' semantically, as it specifies the color associated with the celebration. There are no factual errors, and it directly addresses the question about the color of clothing worn during Oranjegekte or Koningsdag.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Koningsdag",
+        "Oranjegekte"
+      ],
+      "retrieved_titles": [
+        "Oranjegekte"
+      ]
+    },
+    {
+      "id": "5ae37c765542992f92d822d4",
+      "question": "What was the name of the 1996 loose adaptation of William Shakespeare's \"Romeo & Juliet\" written by James Gunn?",
+      "ground_truth": "Tromeo and Juliet",
+      "predicted": "Tromeo and Juliet",
+      "correct": true,
+      "reasoning": "The agent's answer matches the ground truth exactly, both in terms of the title and the context of the question. There are no factual errors or contradictions, and the answer directly addresses the question asked.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "James Gunn",
+        "Tromeo and Juliet"
+      ],
+      "retrieved_titles": [
+        "Tromeo and Juliet"
+      ]
+    },
+    {
+      "id": "5ae33c4d5542992f92d82262",
+      "question": "Robert Suettinger was the national intelligence officer under which former Governor of Arkansas?",
+      "ground_truth": "William Jefferson Clinton",
+      "predicted": "I don't know.",
+      "correct": false,
+      "reasoning": "The agent answer 'I don't know' is incorrect because the ground truth clearly states that Robert Suettinger was the national intelligence officer under William Jefferson Clinton, a fact that is well-documented. Therefore, the agent's response does not address the question and fails to provide the correct information.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Bill Clinton",
+        "Robert Suettinger"
+      ],
+      "retrieved_titles": [
+        "Robert Suettinger"
+      ]
+    },
+    {
+      "id": "5a77cb335542997042120b3a",
+      "question": "What American professional Hawaiian surfer born 18 October 1992 won the Rip Curl Pro Portugal?",
+      "ground_truth": "John John Florence",
+      "predicted": "I don't know.",
+      "correct": false,
+      "reasoning": "The agent answer 'I don't know' is incorrect because the ground truth clearly identifies John John Florence as the American professional Hawaiian surfer who won the Rip Curl Pro Portugal. The question has a clear answer, and the agent's response does not address it at all.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "John John Florence",
+        "MEO Rip Curl Pro Portugal"
+      ],
+      "retrieved_titles": [
+        "MEO Rip Curl Pro Portugal"
+      ]
+    },
+    {
+      "id": "5a8979f4554299669944a52e",
+      "question": "What is the middle name of the actress who plays Bobbi Bacha in Suburban Madness?",
+      "ground_truth": "Ann",
+      "predicted": "Ann.",
+      "correct": true,
+      "reasoning": "The agent's answer matches the ground truth exactly, providing the correct middle name of the actress who plays Bobbi Bacha in Suburban Madness.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Sela Ward",
+        "Bobbi Bacha"
+      ],
+      "retrieved_titles": [
+        "Bobbi Bacha"
+      ]
+    },
+    {
+      "id": "5a713ea95542994082a3e6e4",
+      "question": "Alvaro Mexia had a diplomatic mission with which tribe of indigenous people?",
+      "ground_truth": "Apalachees",
+      "predicted": "Ais native population.",
+      "correct": false,
+      "reasoning": "The agent's answer refers to the 'Ais native population,' which is incorrect. The ground truth specifies that Alvaro Mexia had a diplomatic mission with the Apalachees. Since the agent's answer does not match the ground truth and contains a factual error, it is not correct.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Alvaro Mexia",
+        "Indigenous peoples of Florida"
+      ],
+      "retrieved_titles": [
+        "Alvaro Mexia"
+      ]
+    },
+    {
+      "id": "5a78bd9b554299078472774a",
+      "question": "What nationality were social anthropologists Alfred Gell and Edmund Leach?",
+      "ground_truth": "British",
+      "predicted": "British.",
+      "correct": true,
+      "reasoning": "The agent answer 'British' matches the ground truth 'British' exactly, indicating that it is correct. There are no factual errors or contradictions in the response, and it directly addresses the question asked about the nationality of Alfred Gell and Edmund Leach.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Edmund Leach",
+        "Alfred Gell"
+      ],
+      "retrieved_titles": [
+        "Alfred Gell"
+      ]
+    },
+    {
+      "id": "5a7625e8554299109176e66a",
+      "question": "In which year was the King who made the 1925 Birthday Honours born?",
+      "ground_truth": "1865",
+      "predicted": "1865",
+      "correct": true,
+      "reasoning": "The agent's answer of 1865 matches the ground truth, which also states 1865. Therefore, the answer is correct as it accurately reflects the information requested in the question.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "1925 Birthday Honours",
+        "George V"
+      ],
+      "retrieved_titles": [
+        "1925 Birthday Honours"
+      ]
+    },
+    {
+      "id": "5ae2dd2055429928c423950d",
+      "question": "What is the county seat of the county where East Lempster, New Hampshire is located?",
+      "ground_truth": "Newport",
+      "predicted": "Newport.",
+      "correct": true,
+      "reasoning": "The agent's answer 'Newport' matches the ground truth exactly, indicating that it is correct. It directly addresses the question about the county seat of the county where East Lempster, New Hampshire is located.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "East Lempster, New Hampshire",
+        "Sullivan County, New Hampshire"
+      ],
+      "retrieved_titles": [
+        "East Lempster, New Hampshire"
+      ]
+    },
+    {
+      "id": "5abdf12255429976d4830a2f",
+      "question": "The Album Against the Wind was the 11th Album of a Rock singer Robert C Seger born may 6 1945. What was the Rock singers stage name ?",
+      "ground_truth": "Bob Seger",
+      "predicted": "Bob Seger",
+      "correct": true,
+      "reasoning": "The agent's answer 'Bob Seger' matches the ground truth and correctly identifies the stage name of the rock singer Robert C Seger. There are no factual errors or contradictions, and the answer directly addresses the question asked.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Against the Wind (album)",
+        "Bob Seger"
+      ],
+      "retrieved_titles": [
+        "Against the Wind (album)"
+      ]
+    },
+    {
+      "id": "5a88658955429938390d3f47",
+      "question": "Rostker v. Goldberg held that the practice of what way of filling armed forces vacancies was consitutional?",
+      "ground_truth": "Conscription",
+      "predicted": "Men registering for draft.",
+      "correct": false,
+      "reasoning": "The agent's answer refers to men registering for the draft, which is a specific aspect of conscription. However, the ground truth term 'conscription' encompasses the broader practice of mandatory enlistment in the armed forces, which is what the case addressed. While the agent's answer is related, it does not fully capture the essence of the ground truth, which is a more general term. Therefore, the answer is not entirely correct.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Conscription in the United States",
+        "Rostker v. Goldberg"
+      ],
+      "retrieved_titles": [
+        "Rostker v. Goldberg"
+      ]
+    },
+    {
+      "id": "5a86ebac55429960ec39b6d6",
+      "question": "Handi-Snacks are a snack food product line sold by what American multinational confectionery, food, and beverage company that is based in Illinois?",
+      "ground_truth": "Mondelez International, Inc.",
+      "predicted": "Mondelez International",
+      "correct": true,
+      "reasoning": "The agent answer 'Mondelez International' is correct as it matches the ground truth semantically, even though it omits 'Inc.' which is not necessary for the identification of the company. The answer directly addresses the question asked without any factual errors.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Mondelez International",
+        "Handi-Snacks"
+      ],
+      "retrieved_titles": [
+        "Handi-Snacks"
+      ]
+    },
+    {
+      "id": "5aba5d2e55429901930fa799",
+      "question": "What was the name of a woman from the book titled \"Their Lives: The Women Targeted by the Clinton Machine \" and was also a former white house intern?",
+      "ground_truth": "Monica Lewinsky",
+      "predicted": "Monica Lewinsky",
+      "correct": true,
+      "reasoning": "The agent answer 'Monica Lewinsky' matches the ground truth exactly and correctly identifies her as a woman from the book 'Their Lives: The Women Targeted by the Clinton Machine' and a former White House intern. There are no factual errors or contradictions in the response.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Their Lives",
+        "Monica Lewinsky"
+      ],
+      "retrieved_titles": [
+        "Their Lives"
+      ]
+    },
+    {
+      "id": "5ae5736e5542990ba0bbb2b3",
+      "question": "When was the American lawyer, lobbyist and political consultant who was a senior member of the presidential campaign of Donald Trump born?",
+      "ground_truth": "April 1, 1949",
+      "predicted": "April 1, 1949",
+      "correct": true,
+      "reasoning": "The agent's answer matches the ground truth exactly, providing the correct birth date of the individual in question. There are no factual errors or contradictions, and the answer directly addresses the question asked.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Paul Manafort",
+        "Trump campaign\u2013Russian meeting"
+      ],
+      "retrieved_titles": [
+        "Paul Manafort"
+      ]
+    },
+    {
+      "id": "5ae005b555429942ec259bec",
+      "question": "In what year was the novel that Louren\u00e7o Mutarelli based \"Nina\" on based first published?",
+      "ground_truth": "1866",
+      "predicted": "1866",
+      "correct": true,
+      "reasoning": "The agent's answer matches the ground truth exactly, providing the correct year of publication for the novel that Louren\u00e7o Mutarelli based \"Nina\" on. There are no factual errors or contradictions in the response.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Louren\u00e7o Mutarelli",
+        "Crime and Punishment"
+      ],
+      "retrieved_titles": [
+        "Crime and Punishment"
+      ]
+    },
+    {
+      "id": "5a7759fc5542993569682d60",
+      "question": "Where are Teide National Park and Garajonay National Park located?",
+      "ground_truth": "Canary Islands, Spain",
+      "predicted": "Tenerife; La Gomera",
+      "correct": false,
+      "reasoning": "The agent's answer correctly identifies the specific islands (Tenerife for Teide National Park and La Gomera for Garajonay National Park) where these parks are located. However, it does not explicitly mention that both parks are part of the Canary Islands, Spain, which is the broader geographical context provided in the ground truth. While the answer is not incorrect, it is incomplete as it misses the overall location context. Therefore, it does not fully address the question as asked.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Teide National Park",
+        "Garajonay National Park"
+      ],
+      "retrieved_titles": [
+        "Garajonay National Park"
+      ]
+    },
+    {
+      "id": "5a835478554299123d8c20ed",
+      "question": "How many copies of Roald Dahl's variation on a popular anecdote sold?",
+      "ground_truth": "250 million",
+      "predicted": "I don't know.",
+      "correct": false,
+      "reasoning": "The agent's answer 'I don't know' is incorrect because the ground truth provides a clear and specific answer (250 million). The question asks for a specific number, and the agent fails to provide any information, which is not acceptable when the information is available.",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "gold_titles": [
+        "Roald Dahl",
+        "Mrs. Bixby and the Colonel's Coat"
+      ],
+      "retrieved_titles": [
+        "The Collected Short Stories of Roald Dahl"
+      ]
+    },
+    {
+      "id": "5aba749055429901930fa7d8",
+      "question": "What occupation do Chris Menges and Aram Avakian share?",
+      "ground_truth": "director",
+      "predicted": "Different occupations.",
+      "correct": false,
+      "reasoning": "The agent's answer is incorrect because it states that Chris Menges and Aram Avakian have different occupations, while the ground truth indicates that they both share the occupation of 'director'. This is a factual contradiction, as they are both directors.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Chris Menges",
+        "Aram Avakian"
+      ],
+      "retrieved_titles": [
+        "Chris Menges"
+      ]
+    },
+    {
+      "id": "5abfb3425542990832d3a1c0",
+      "question": "Andrew Jaspan was the co-founder of what not-for-profit media outlet?",
+      "ground_truth": "The Conversation",
+      "predicted": "The Conversation",
+      "correct": true,
+      "reasoning": "The agent's answer matches the ground truth semantically, as both state that Andrew Jaspan was the co-founder of The Conversation. There are no factual errors, and the answer directly addresses the question asked.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Andrew Jaspan",
+        "The Conversation (website)"
+      ],
+      "retrieved_titles": [
+        "Andrew Jaspan"
+      ]
+    },
+    {
+      "id": "5ac3165c5542995ef918c10a",
+      "question": "Which American film director hosted the 18th Independent Spirit Awards in 2002?",
+      "ground_truth": "John Waters",
+      "predicted": "John Waters",
+      "correct": true,
+      "reasoning": "The agent answer 'John Waters' matches the ground truth exactly, indicating that it is correct. There are no factual errors or contradictions, and it directly addresses the question asked.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "18th Independent Spirit Awards",
+        "John Waters"
+      ],
+      "retrieved_titles": [
+        "18th Independent Spirit Awards"
+      ]
+    },
+    {
+      "id": "5ae53b545542990ba0bbb23c",
+      "question": "Where does the hotel and casino located in which Bill Cosby's third album was recorded?",
+      "ground_truth": "Las Vegas Strip in Paradise",
+      "predicted": "Flamingo Hotel, Las Vegas",
+      "correct": false,
+      "reasoning": "The agent's answer specifies the Flamingo Hotel in Las Vegas, which is a correct location. However, it does not mention that it is located on the Las Vegas Strip in Paradise, which is part of the ground truth. Therefore, while the answer is partially correct, it does not fully address the question as it misses the specific detail about the Las Vegas Strip.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Flamingo Las Vegas",
+        "Why Is There Air?"
+      ],
+      "retrieved_titles": [
+        "Why Is There Air?"
+      ]
+    },
+    {
+      "id": "5ae224da554299234fd043ee",
+      "question": "Do the drinks Gibson and Zurracapote both contain gin?",
+      "ground_truth": "no",
+      "predicted": "No, only Gibson.",
+      "correct": false,
+      "reasoning": "The agent's answer states that only Gibson contains gin, which is incorrect because the ground truth indicates that neither drink contains gin. Therefore, the agent's answer contains a factual error and does not accurately address the question.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Gibson (cocktail)",
+        "Zurracapote"
+      ],
+      "retrieved_titles": [
+        "Gibson (cocktail)"
+      ]
+    },
+    {
+      "id": "5ae2b770554299495565db0f",
+      "question": "In what month is the annual documentary film festival, that is presented by the fortnightly published British journal of literary essays, held? ",
+      "ground_truth": "March and April",
+      "predicted": "March and April",
+      "correct": true,
+      "reasoning": "The agent's answer matches the ground truth exactly, stating that the annual documentary film festival is held in March and April. There are no factual errors or contradictions, and the answer directly addresses the question asked.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "London Review of Books",
+        "London International Documentary Festival"
+      ],
+      "retrieved_titles": [
+        "London International Documentary Festival"
+      ]
+    },
+    {
+      "id": "5a80b3a9554299485f5986cc",
+      "question": "Tysons Galleria is located in what county?",
+      "ground_truth": "Fairfax County",
+      "predicted": "Fairfax County",
+      "correct": true,
+      "reasoning": "The agent's answer 'Fairfax County' matches the ground truth exactly, indicating that it is correct and contains no factual errors. It directly addresses the question asked about the location of Tysons Galleria.",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "gold_titles": [
+        "Tysons Galleria",
+        "McLean, Virginia"
+      ],
+      "retrieved_titles": [
+        "Tysons, Virginia"
+      ]
+    },
+    {
+      "id": "5a8e0a005542995085b373a1",
+      "question": "Bordan Tkachuk was the CEO of a company that provides what sort of products?",
+      "ground_truth": "IT products and services",
+      "predicted": "I don't know.",
+      "correct": false,
+      "reasoning": "The agent answer 'I don't know' is incorrect because the ground truth clearly states that Bordan Tkachuk was the CEO of a company that provides IT products and services. The agent's response does not address the question and fails to provide the relevant information, which is a factual error given the clarity of the ground truth.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Viglen",
+        "Bordan Tkachuk"
+      ],
+      "retrieved_titles": [
+        "Bordan Tkachuk"
+      ]
+    },
+    {
+      "id": "5ac1b8ee5542994d76dccedc",
+      "question": "Which filmmaker was known for animation, Lev Yilmaz or Pamela B. Green?",
+      "ground_truth": "Levni Yilmaz",
+      "predicted": "Lev Yilmaz.",
+      "correct": true,
+      "reasoning": "The agent answer 'Lev Yilmaz' is semantically correct as it refers to the same individual as 'Levni Yilmaz', despite the slight difference in the name. The answer correctly identifies Lev Yilmaz as the filmmaker known for animation, without any factual errors or contradictions. Therefore, it directly addresses the question asked.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Lev Yilmaz",
+        "Pamela B. Green"
+      ],
+      "retrieved_titles": [
+        "Lev Yilmaz"
+      ]
+    },
+    {
+      "id": "5adccd795542990d50227d2c",
+      "question": "In which city is the ambassador of the Rabat-Sal\u00e9-K\u00e9nitra administrative region to China based?",
+      "ground_truth": "Beijing",
+      "predicted": "Beijing.",
+      "correct": true,
+      "reasoning": "The agent's answer 'Beijing' matches the ground truth exactly, indicating that it is correct. There are no factual errors or contradictions, and it directly addresses the question asked about the location of the ambassador.",
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "gold_titles": [
+        "Moroccan Ambassador to China",
+        "Rabat"
+      ],
+      "retrieved_titles": [
+        "Moroccan Ambassador to China",
+        "Rabat"
+      ]
+    },
+    {
+      "id": "5a84c4135542994c784dda31",
+      "question": "Are Yingkou and Fuding the same level of city?",
+      "ground_truth": "no",
+      "predicted": "Different city levels.",
+      "correct": false,
+      "reasoning": "The agent's answer states that Yingkou and Fuding are of different city levels, which is a factual contradiction to the ground truth that states they are the same level of city. Therefore, the agent's answer is incorrect.",
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "gold_titles": [
+        "Fuding",
+        "Yingkou"
+      ],
+      "retrieved_titles": [
+        "Fuding"
+      ]
+    }
+  ]
+}
