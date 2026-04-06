@@ -31,3 +31,4 @@ nq_few_shot_prompt_for_judge_scoring.tsv
 nq_few_shot_prompt_for_judge_scoring.tsv
 ARES/
 SEAL-RAG/
+data/generated/
