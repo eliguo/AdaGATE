@@ -1,0 +1,23 @@
+{
+  "evaluate_py_summary": {
+    "controller": "seal_rag_redundancy",
+    "dataset_name": "redundancy",
+    "model": "openai:gpt-4o-mini",
+    "eval_model": "gpt-4o",
+    "retriever_k": 3,
+    "repair_loop": 3,
+    "n_total": 100,
+    "n_valid": 100,
+    "n_errors": 0,
+    "accuracy": 0.66,
+    "avg_precision": 0.2417,
+    "avg_recall": 0.135,
+    "avg_f1": 0.1697,
+    "timestamp": "20260331_185120"
+  },
+  "ares_scores": {
+    "Context Relevance Scores": 0.85,
+    "Answer Faithfulness Scores": 0.44,
+    "Answer Relevance Scores": 0.41
+  }
+}

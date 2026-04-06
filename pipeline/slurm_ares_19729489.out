@@ -1,21 +1,0 @@
-
-running ARES on: results_seal_rag_k3_L1_n20_20260324_194727.json
-controller : seal_rag
-n_valid    : 20
-judge model: gpt-3.5-turbo-0125
-
-converted 20 results → results_seal_rag_k3_L1_n20_20260324_194727_ares_input.tsv
-running ARES ues_idp scoring (this may take a few minutes)...
-vLLM not imported.
-Evaluating large subset with gpt-3.5-turbo-0125:   0%|          | 0/20 [00:00<?, ?it/s]Evaluating large subset with gpt-3.5-turbo-0125:   5%|▌         | 1/20 [00:00<00:18,  1.01it/s]Evaluating large subset with gpt-3.5-turbo-0125:  10%|█         | 2/20 [00:01<00:15,  1.16it/s]Evaluating large subset with gpt-3.5-turbo-0125:  15%|█▌        | 3/20 [00:02<00:12,  1.39it/s]Evaluating large subset with gpt-3.5-turbo-0125:  20%|██        | 4/20 [00:02<00:10,  1.47it/s]Evaluating large subset with gpt-3.5-turbo-0125:  25%|██▌       | 5/20 [00:03<00:09,  1.58it/s]Evaluating large subset with gpt-3.5-turbo-0125:  30%|███       | 6/20 [00:05<00:15,  1.12s/it]Evaluating large subset with gpt-3.5-turbo-0125:  35%|███▌      | 7/20 [00:08<00:20,  1.60s/it]Evaluating large subset with gpt-3.5-turbo-0125:  40%|████      | 8/20 [00:09<00:18,  1.58s/it]Evaluating large subset with gpt-3.5-turbo-0125:  45%|████▌     | 9/20 [00:11<00:18,  1.70s/it]Evaluating large subset with gpt-3.5-turbo-0125:  50%|█████     | 10/20 [00:12<00:13,  1.33s/it]Evaluating large subset with gpt-3.5-turbo-0125:  55%|█████▌    | 11/20 [00:15<00:18,  2.06s/it]Evaluating large subset with gpt-3.5-turbo-0125:  60%|██████    | 12/20 [00:17<00:15,  1.93s/it]Evaluating large subset with gpt-3.5-turbo-0125:  65%|██████▌   | 13/20 [00:17<00:10,  1.47s/it]Evaluating large subset with gpt-3.5-turbo-0125:  70%|███████   | 14/20 [00:19<00:09,  1.53s/it]Evaluating large subset with gpt-3.5-turbo-0125:  75%|███████▌  | 15/20 [00:21<00:08,  1.76s/it]Evaluating large subset with gpt-3.5-turbo-0125:  80%|████████  | 16/20 [00:23<00:06,  1.73s/it]Evaluating large subset with gpt-3.5-turbo-0125:  85%|████████▌ | 17/20 [00:25<00:05,  1.82s/it]Evaluating large subset with gpt-3.5-turbo-0125:  90%|█████████ | 18/20 [00:26<00:02,  1.47s/it]Evaluating large subset with gpt-3.5-turbo-0125:  95%|█████████▌| 19/20 [00:28<00:01,  1.58s/it]Evaluating large subset with gpt-3.5-turbo-0125: 100%|██████████| 20/20 [00:30<00:00,  1.73s/it]Evaluating large subset with gpt-3.5-turbo-0125: 100%|██████████| 20/20 [00:30<00:00,  1.50s/it]
-Number of times did not extract Yes or No: 0
-
-=======================================================
-ARES evaluation results
-=======================================================
-  Context Relevance Scores: 0.55
-  Answer Faithfulness Scores: 0.25
-  Answer Relevance Scores: 0.15
-=======================================================
-
-ARES scores saved → results_seal_rag_k3_L1_n20_20260324_194727_ares_scores.json

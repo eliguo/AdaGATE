@@ -1,0 +1,23 @@
+{
+  "evaluate_py_summary": {
+    "controller": "seal_rag_shuffle",
+    "dataset_name": "shuffle",
+    "model": "openai:gpt-4o-mini",
+    "eval_model": "gpt-4o",
+    "retriever_k": 3,
+    "repair_loop": 3,
+    "n_total": 100,
+    "n_valid": 100,
+    "n_errors": 0,
+    "accuracy": 0.68,
+    "avg_precision": 0.88,
+    "avg_recall": 0.46,
+    "avg_f1": 0.6,
+    "timestamp": "20260331_204008"
+  },
+  "ares_scores": {
+    "Context Relevance Scores": 0.87,
+    "Answer Faithfulness Scores": 0.47,
+    "Answer Relevance Scores": 0.43
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "evaluate_py_summary": {
+    "controller": "self_rag",
+    "model": "openai:gpt-4o-mini",
+    "eval_model": "gpt-4o",
+    "retriever_k": 3,
+    "repair_loop": 1,
+    "n_total": 100,
+    "n_valid": 100,
+    "n_errors": 0,
+    "accuracy": 0.57,
+    "avg_precision": 0.6,
+    "avg_recall": 0.385,
+    "avg_f1": 0.4567,
+    "timestamp": "20260330_210422"
+  },
+  "ares_scores": {
+    "Context Relevance Scores": 0.61,
+    "Answer Faithfulness Scores": 0.39,
+    "Answer Relevance Scores": 0.36
+  }
+}
