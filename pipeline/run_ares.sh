@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=ares_eval
-#SBATCH --time=00:30:00
+#SBATCH --time=01:00:00
 #SBATCH --mem=8G
 #SBATCH --cpus-per-task=2
 #SBATCH --output=/gpfs/scratch/yg3030/AdaGATE/SEAL-RAG/slurm_ares_%j.out
