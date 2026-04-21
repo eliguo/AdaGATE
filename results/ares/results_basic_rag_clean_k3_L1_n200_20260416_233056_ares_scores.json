@@ -1,0 +1,28 @@
+{
+  "evaluate_py_summary": {
+    "controller": "basic_rag_clean",
+    "dataset_name": "clean",
+    "model": "openai:gpt-4o-mini",
+    "eval_model": "gpt-4o",
+    "retriever_k": 3,
+    "repair_loop": 1,
+    "token_budget": 1500,
+    "n_total": 200,
+    "n_valid": 200,
+    "n_errors": 0,
+    "accuracy": 0.585,
+    "avg_precision": 0.5592,
+    "avg_recall": 0.665,
+    "avg_f1": 0.6008,
+    "avg_input_tokens": 364.12,
+    "avg_doc_count": 3.0,
+    "avg_budget_util": 0.2428,
+    "tokens_per_correct": 352.48,
+    "timestamp": "20260416_233056"
+  },
+  "ares_scores": {
+    "Context Relevance Scores": 0.495,
+    "Answer Faithfulness Scores": 0.44,
+    "Answer Relevance Scores": 0.44
+  }
+}

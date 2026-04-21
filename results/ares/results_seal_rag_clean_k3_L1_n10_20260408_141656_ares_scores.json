@@ -1,0 +1,23 @@
+{
+  "evaluate_py_summary": {
+    "controller": "seal_rag_clean",
+    "dataset_name": "clean",
+    "model": "openai:gpt-4o-mini",
+    "eval_model": "gpt-4o",
+    "retriever_k": 3,
+    "repair_loop": 1,
+    "n_total": 10,
+    "n_valid": 10,
+    "n_errors": 0,
+    "accuracy": 0.8,
+    "avg_precision": 1.0,
+    "avg_recall": 0.5,
+    "avg_f1": 0.6667,
+    "timestamp": "20260408_141656"
+  },
+  "ares_scores": {
+    "Context Relevance Scores": 0.3,
+    "Answer Faithfulness Scores": 0.2,
+    "Answer Relevance Scores": 0.2
+  }
+}
