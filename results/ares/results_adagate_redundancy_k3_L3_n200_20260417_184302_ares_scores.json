@@ -1,0 +1,28 @@
+{
+  "evaluate_py_summary": {
+    "controller": "adagate_redundancy",
+    "dataset_name": "natural_redundancy",
+    "model": "openai:gpt-4o-mini",
+    "eval_model": "gpt-4o",
+    "retriever_k": 3,
+    "repair_loop": 3,
+    "token_budget": 3000,
+    "n_total": 200,
+    "n_valid": 200,
+    "n_errors": 0,
+    "accuracy": 0.595,
+    "avg_precision": 0.8166,
+    "avg_recall": 0.685,
+    "avg_f1": 0.7115,
+    "avg_input_tokens": 231.97,
+    "avg_doc_count": 1.99,
+    "avg_budget_util": 0.0773,
+    "tokens_per_correct": 193.55,
+    "timestamp": "20260417_184302"
+  },
+  "ares_scores": {
+    "Context Relevance Scores": 0.525,
+    "Answer Faithfulness Scores": 0.475,
+    "Answer Relevance Scores": 0.445
+  }
+}

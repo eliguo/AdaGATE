@@ -1,0 +1,28 @@
+{
+  "evaluate_py_summary": {
+    "controller": "seal_rag_noise",
+    "dataset_name": "noise",
+    "model": "openai:gpt-4o-mini",
+    "eval_model": "gpt-4o",
+    "retriever_k": 3,
+    "repair_loop": 1,
+    "token_budget": 1500,
+    "n_total": 200,
+    "n_valid": 200,
+    "n_errors": 0,
+    "accuracy": 0.57,
+    "avg_precision": 0.79,
+    "avg_recall": 0.4075,
+    "avg_f1": 0.535,
+    "avg_input_tokens": 131.35,
+    "avg_doc_count": 1.03,
+    "avg_budget_util": 0.0876,
+    "tokens_per_correct": 125.89,
+    "timestamp": "20260418_180921"
+  },
+  "ares_scores": {
+    "Context Relevance Scores": 0.2,
+    "Answer Faithfulness Scores": 0.175,
+    "Answer Relevance Scores": 0.17
+  }
+}
